@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Countdown Auto-Click",
+  "version": "0.0.0",
+  "description": "Pulsa un botón cuando su cuenta regresiva llega a cero. Sin cuentas, sin red, sin datos.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["lib/countdown.js", "content.js"],
+      "run_at": "document_idle",
+      "all_frames": false
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "countdown-autoclick",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Extensión que pulsa un botón cuando su cuenta regresiva llega a cero",
+  "license": "GPL-3.0-only",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:chromium": "node scripts/build.mjs chromium",
+    "build:firefox": "node scripts/build.mjs firefox",
+    "test": "node --test tests/"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
