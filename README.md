@@ -7,6 +7,17 @@ qué botón detectó, y luego el mensaje de respuesta de la página.
 No envía datos, no pide cuentas y no hace peticiones de red: todo ocurre en la
 pestaña. No adelanta la apertura; el sitio decide cuándo habilita el botón.
 
+## Descargar sin compilar
+
+En [Releases](https://github.com/fer-prieto/countdown-autoclick/releases) están los
+paquetes listos:
+
+- **Chromium**: `countdown-autoclick-chromium-<versión>.zip` → descomprimir y cargar
+  la carpeta como extensión descomprimida.
+- **Firefox**: `countdown-autoclick-firefox-<versión>.zip` → complemento **temporal**
+  (se borra al cerrar). Para instalación permanente hay que firmarlo en
+  addons.mozilla.org (canal *unlisted*) y usar el `.xpi` firmado.
+
 ## Compilar
 
 Sin dependencias, solo Node 18 o superior:
